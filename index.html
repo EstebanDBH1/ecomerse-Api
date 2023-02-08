@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecomerce api</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <nav>
+        <h1 class="logo">MINIMALIST SHOP</h1>
+        <a href="#lista" class="iconCarrito"><ion-icon name="cart-outline"></ion-icon></a>
+      </nav>
+    </div>
+
+    <div class="container__cards">
+      <template id="templateCards">
+        <div class="card">
+          <img src="" alt="imagen" class="imgProducts" />
+          <h3 class="title__product">Iphone</h3>
+          <p class="">
+            <span>$</span>
+            <span class="precio">500</span>
+          </p>
+          <button class="btnAgregar">Agregar al carrito</button>
+        </div>
+      </template>
+    </div>
+
+    <section id="lista" class="lista_productos">
+      <div class="header__lista">
+        <p class="tuCompra">Tu carrito:</p>
+        <a href="#" class="closeCart">
+          <ion-icon name="close-outline"></ion-icon>
+        </a>
+      </div>
+
+      <div class="container_product-buy"></div>
+
+      <div class="compra-mensaje">
+        <button class="vaciarCart">Vaciar carrito</button> <br>
+        <p>
+          Subtotal:
+        <span class="Subtotal">20</span>
+        
+        </p>
+
+        <button class="compra__hecha">Comprar</button>
+      </div>
+    </section>
+
+    <template id="templateLista">
+      <div class="containerLista">
+        <div class="container__mensaje">
+          <p class="mensaje"></p>
+        </div>
+
+        <div class="contenido__lista">
+          <img src="" alt="" class="imgLista" />
+
+          <div class="info__lista">
+            <p class="nombre">Jacket</p>
+            <p>
+              <span class="count">1</span>
+              <span>x</span>
+              <span class="price">500</span>
+              <span>=</span>
+              <span class="valorTotal"></span>
+            </p>
+
+            <button class="btnMas">+</button>
+            <button class="btnMenos">-</button>
+          </div>
+        </div>
+
+        
+      </div>
+    </template>
+
+    <div class="modal">
+      <div class="container__modal">
+        <h1 class="mensajeModal">El item ya esta en el carrito</h1>
+        <button class="btnModal">Cerrar</button>
+      </div>
+    </div>
+
+    <!--Javascript-->
+    <script src="codigo.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
